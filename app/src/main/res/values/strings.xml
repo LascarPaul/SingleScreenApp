@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">SingleScreenApp</string>
+    <string name="palaceDescription"> The Palace of Culture (Romanian: Palatul Culturii) is an edifice located in Iaşi, Romania. The building served as Administrative and Justice Palace until 1955, when its destination was changed, being assigned to the four museums nowadays united under the name of Moldavia National Museum Complex. Also, the building houses the Cultural Heritage Conservation-Restoration Centre, and hosts various exhibitions and other events.
+The Palace of Culture is listed in the National Register of Historic Monuments.</string>
+    <string name="yt">YouTube</string>
+    <string name="fb">FaceBook</string>
+    <string name="tw">Twitter</string>
+    <string name="mp">Maps</string>
+    <string name="info">Information</string>
+    <string name="hours">Hours Open: 10am - 5pm</string>
+
+<string name="Monday">Monday - Sunday</string>
+
+    </resources>
