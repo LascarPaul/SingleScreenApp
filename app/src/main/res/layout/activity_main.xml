@@ -8,10 +8,10 @@
     android:layout_height="match_parent"
     android:background="@drawable/gradient4"
     android:orientation="vertical"
-    android:paddingBottom="8dp"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/main_relativelayout_padding"
+    android:paddingLeft="@dimen/main_relativelayout_padding"
+    android:paddingRight="@dimen/main_relativelayout_padding"
+    android:paddingTop="@dimen/main_relativelayout_padding"
     tools:context="com.example.paul.singlescreenapp.MainActivity"
 
     >
@@ -25,13 +25,13 @@
         android:weightSum="9"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="100dp"
+        android:layout_marginBottom="@dimen/first_linearlayout_margin"
         android:orientation="vertical">
 
         <android.support.v7.widget.CardView
             card_view:cardBackgroundColor="#AAAAAA"
-            android:layout_marginRight="30dp"
-            android:layout_marginLeft="30dp"
+            android:layout_marginRight="@dimen/first_cardview_margin"
+            android:layout_marginLeft="@dimen/first_cardview_margin"
             android:layout_weight="2"
             android:alpha=".65"
             android:id="@+id/card_view"
@@ -55,7 +55,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/palaceDescription"
                     android:textColor="@color/colorBlack"
-                    android:textSize="16sp"
+                    android:textSize="@dimen/description_size"
                     android:gravity="center_horizontal" />
 
 
@@ -64,7 +64,7 @@
 
         </android.support.v7.widget.CardView>
         <android.support.v7.widget.CardView
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="@dimen/second_cardview_margin"
             android:layout_weight="5"
             android:id="@+id/card_view1"
             android:layout_width="match_parent"
@@ -83,36 +83,25 @@
         <android.support.v7.widget.CardView
             android:alpha=".85"
             card_view:cardBackgroundColor="#AAAAAA"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="@dimen/third_cardview_margin"
             android:layout_weight="2"
             android:id="@+id/card_view2"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             card_view:cardElevation="3dp">
             <TextView
-                android:layout_marginRight="10dp"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="10dp"
+                android:layout_marginRight="@dimen/hours_of_operation_textview_margin"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/hours_of_operation_textview_margin"
+                android:layout_marginLeft="@dimen/hours_of_operation_textview_margin"
                 android:fontFamily="sans-serif-light"
-                android:textSize="25sp"
+                android:textSize="@dimen/hours_of_operation_textSize"
                 android:textColor="@color/colorBlack"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="@string/hours"/>
-            <TextView
-                android:layout_marginRight="11dp"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="11dp"
-                android:layout_marginLeft="11dp"
-                android:fontFamily="sans-serif-light"
-                android:textSize="25sp"
-                android:textColor="@color/colorBlack"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="@string/hours"/>
+
 
 
 
@@ -135,10 +124,10 @@
         <android.support.v7.widget.CardView
             card_view:cardBackgroundColor="@android:color/transparent"
             card_view:cardElevation="0dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginRight="5dp"
+            android:layout_marginEnd="@dimen/fourth_cardview_margin"
+            android:layout_marginRight="@dimen/fourth_cardview_margin"
             android:alpha=".85"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="@dimen/fourth_cardview_margin"
             android:layout_weight="1"
             android:id="@+id/card_view4"
             android:layout_width="0dp"
@@ -150,7 +139,7 @@
             android:scaleType="fitCenter"
             android:id="@+id/youtubeIcon"
             android:layout_width="wrap_content"
-            android:layout_height="50dp"
+            android:layout_height="@dimen/image_button_height"
             android:src="@drawable/yt"
             android:contentDescription="@string/yt"
             />
@@ -158,10 +147,10 @@
         <android.support.v7.widget.CardView
             card_view:cardBackgroundColor="@android:color/transparent"
             card_view:cardElevation="0dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginRight="5dp"
+            android:layout_marginEnd="@dimen/fifth_cardview_margin"
+            android:layout_marginRight="@dimen/fifth_cardview_margin"
             android:alpha=".85"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="@dimen/fifth_cardview_margin"
             android:layout_weight="1"
             android:id="@+id/card_view5"
             android:layout_width="0dp"
@@ -173,17 +162,17 @@
                 android:scaleType="fitCenter"
                 android:id="@+id/facebookIcon"
                 android:layout_width="wrap_content"
-                android:layout_height="50dp"
+                android:layout_height="@dimen/image_button_height"
                 android:src="@drawable/fb"
                 />
         </android.support.v7.widget.CardView>
         <android.support.v7.widget.CardView
             card_view:cardBackgroundColor="@android:color/transparent"
             card_view:cardElevation="0dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginRight="5dp"
+            android:layout_marginEnd="@dimen/sixth_cardview_margin"
+            android:layout_marginRight="@dimen/sixth_cardview_margin"
             android:alpha=".85"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="@dimen/sixth_cardview_margin"
             android:layout_weight="1"
             android:id="@+id/card_view6"
             android:layout_width="0dp"
@@ -194,7 +183,7 @@
                 android:scaleType="fitCenter"
                 android:id="@+id/twitterIcon"
                 android:layout_width="wrap_content"
-                android:layout_height="50dp"
+                android:layout_height="@dimen/image_button_height"
                 android:src="@drawable/twitter"
                 android:contentDescription="@string/tw"
                 />
@@ -202,10 +191,10 @@
         <android.support.v7.widget.CardView
             card_view:cardBackgroundColor="@android:color/transparent"
             card_view:cardElevation="0dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginRight="5dp"
+            android:layout_marginEnd="@dimen/seventh_cardview_margin"
+            android:layout_marginRight="@dimen/seventh_cardview_margin"
             android:alpha=".85"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="@dimen/seventh_cardview_margin"
             android:layout_weight="1"
             android:id="@+id/card_view7"
             android:layout_width="0dp"
@@ -216,7 +205,7 @@
                 android:scaleType="fitCenter"
                 android:id="@+id/maps"
                 android:layout_width="wrap_content"
-                android:layout_height="50dp"
+                android:layout_height="@dimen/image_button_height"
                 android:src="@drawable/maps"
                 android:contentDescription="@string/mp"
                 />
@@ -225,7 +214,7 @@
             card_view:cardBackgroundColor="@android:color/transparent"
             card_view:cardElevation="0dp"
             android:alpha=".85"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="@dimen/eight_cardview_margin"
             android:layout_weight="1    "
             android:id="@+id/card_view8"
             android:layout_width="0dp"
@@ -236,7 +225,7 @@
                 android:scaleType="fitCenter"
                 android:id="@+id/information"
                 android:layout_width="wrap_content"
-                android:layout_height="50dp"
+                android:layout_height="@dimen/image_button_height"
                 android:src="@drawable/info3"
                 android:contentDescription="@string/info"
                 />
@@ -250,7 +239,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/ratingBar"
-        android:layout_marginBottom="44dp"
+        android:layout_marginBottom="@dimen/ratingBar_margin"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
 
